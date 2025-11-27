@@ -42,7 +42,7 @@ El proyecto incluye:
 <details>
 <summary>Click para ver detalles</summary>
 
-- **250 animales** con **16 características principales**.  
+- **101 animales** con **16 características principales**.  
 - Variables numéricas y categóricas transformadas para Machine Learning.  
 - **Target:** `type` (tipo de animal).  
 
