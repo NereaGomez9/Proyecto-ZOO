@@ -136,5 +136,5 @@ Además, se evidenció que características como patas, tipo de alimentación y 
 
 ## 👩‍💻 Autora
 
-Nerea Gomez
+Nerea Gomez - 
 Estudiante de Ironhack, 2025
