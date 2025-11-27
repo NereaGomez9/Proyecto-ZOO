@@ -105,7 +105,7 @@ nuevo_scaled = scaler.transform(nuevo)
 pred = final_model.predict(nuevo_scaled)
 print("Predicción tipo de animal:", pred[0])
 
-
+---
 
 💻 Requisitos
 
