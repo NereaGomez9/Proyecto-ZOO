@@ -1,5 +1,5 @@
 🦓 Proyecto Zoo – Clasificación de Animales con Machine Learning
-📝 Descripción
+📝 ### **Descripción**
 
 Este proyecto clasifica animales según sus características físicas y de comportamiento usando Machine Learning.
 Se trabajó con un dataset limpio de animales que incluye atributos como pelo, plumas, alas, patas, dieta, hábitat, entre otros, para predecir su tipo:
