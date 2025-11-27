@@ -104,6 +104,7 @@ nuevo = [[1,0,0,1,0,0,1,1,1,1,0,0,1,0,1,4]]  # Nueva entrada con las mismas colu
 nuevo_scaled = scaler.transform(nuevo)
 pred = final_model.predict(nuevo_scaled)
 print("Predicción tipo de animal:", pred[0])
+```
 
 ---
 
