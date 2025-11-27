@@ -122,13 +122,13 @@ print("Predicción tipo de animal:", pred[0])
 
 Este proyecto demuestra el flujo completo de Machine Learning:
 
-Limpieza y preparación de datos
+- Limpieza y preparación de datos
 
-Selección de características
+- Selección de características
 
-Entrenamiento y optimización de modelos
+- Entrenamiento y optimización de modelos
 
-Evaluación y visualización de resultados
+- Evaluación y visualización de resultados
 
 Permite clasificar animales de forma efectiva y entender qué atributos influyen más en la predicción.
 El Gradient Boosting se confirmó como el modelo más eficiente para este dataset.
