@@ -1,81 +1,112 @@
-🦓 Proyecto Zoo – Clasificación de Animales con Machine Learning
-📝 **Descripción**
+# 🦓 Proyecto Zoo – Clasificación de Animales con Machine Learning
 
-Este proyecto clasifica animales según sus características físicas y de comportamiento usando Machine Learning.
-Se trabajó con un dataset limpio de animales que incluye atributos como pelo, plumas, alas, patas, dieta, hábitat, entre otros, para predecir su tipo:
-Mamífero 🐶, Ave 🐦, Reptil 🐍, Anfibio 🐸, Pez 🐟 o Insecto 🐜.
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) 
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0.24+-orange?logo=scikit-learn)
+![Pandas](https://img.shields.io/badge/Pandas-1.3+-lightgrey?logo=pandas)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Incluye:
+---
 
-Limpieza y preparación de datos
+## 📝 Descripción
+Este proyecto clasifica animales según sus características físicas y de comportamiento usando **Machine Learning**.  
+Se trabajó con un dataset limpio de animales que incluye atributos como **pelo, plumas, alas, patas, dieta, hábitat**, entre otros, para predecir su tipo:  
 
-Exploración de correlaciones
+- Mamífero 🐶  
+- Ave 🐦  
+- Reptil 🐍  
+- Anfibio 🐸  
+- Pez 🐟  
+- Insecto 🐜  
 
-Entrenamiento de modelos
+El proyecto incluye:  
+- Limpieza y preparación de datos  
+- Exploración de correlaciones  
+- Entrenamiento de modelos  
+- Optimización con Grid Search y Random Search  
 
-Optimización con Grid Search y Random Search
+---
 
-🎯 **Objetivo**
+## 🎯 Objetivo
+<details>
+<summary>Click para ver detalles</summary>
 
-Entrenar un modelo de clasificación capaz de predecir el tipo de animal.
+- Entrenar un modelo de clasificación capaz de predecir el **tipo de animal**.  
+- Analizar qué características son más relevantes para la predicción.  
+- Comparar distintos modelos y elegir el más efectivo.  
 
-Analizar qué características son más relevantes para la predicción.
+</details>
 
-Comparar distintos modelos y elegir el más efectivo.
+---
 
-📊 **Dataset**
+## 📊 Dataset
+<details>
+<summary>Click para ver detalles</summary>
 
-250 animales con 16 características principales.
+- **250 animales** con **16 características principales**.  
+- Variables numéricas y categóricas transformadas para Machine Learning.  
+- **Target:** `type` (tipo de animal).  
 
-Variables numéricas y categóricas transformadas para ML.
+**Agrupación de clases minoritarias:**  
+- Reptiles + Anfibios → `Reptiles_Amphibians`  
+- Insectos + Invertebrados → `Invertebrados`  
 
-Target: type (tipo de animal).
+</details>
 
-Agrupación de clases minoritarias para reducir desbalance:
+---
 
-Reptiles + Anfibios → Reptiles_Amphibians
+## ⚙️ Preparación de Datos
+<details>
+<summary>Click para ver detalles</summary>
 
-Insectos + Invertebrados → Invertebrados
+- Escalado de características numéricas con **StandardScaler**.  
+- Codificación de variables categóricas.  
+- Eliminación de valores innecesarios y duplicados.  
+- Análisis de distribución de clases y correlaciones entre features.  
 
-⚙️ **Preparación de Datos**
+</details>
 
-Escalado de características numéricas con StandardScaler.
+---
 
-Codificación de variables categóricas.
+## 🤖 Modelos de Machine Learning
 
-Eliminación de valores innecesarios y duplicados.
+| Modelo | Accuracy |
+|--------|---------|
+| Gradient Boosting 🌟 | 76% |
+| Regresión Logística | 61% |
+| Random Forest | 70% |
+| KNN | 65% |
 
-Análisis de distribución de clases y correlaciones entre features.
+<details>
+<summary>Optimización</summary>
 
-🤖 **Modelos de Machine Learning**
-Modelo	Accuracy
-Gradient Boosting 🌟	76%
-Regresión Logística	61%
-Random Forest	70%
-KNN	65%
+- Optimización de los dos mejores modelos con **Grid Search** y **Random Search**.  
+- **Gradient Boosting** elegido como modelo final.  
 
-Optimización de los dos mejores modelos con Grid Search y Random Search.
+</details>
 
-Gradient Boosting elegido como modelo final.
+---
 
-📈 **Evaluación**
+## 📈 Evaluación
+<details>
+<summary>Click para ver detalles</summary>
 
-Matriz de confusión para revisar aciertos y errores por clase.
+- **Matriz de confusión** para revisar aciertos y errores por clase.  
+- Métricas: **precisión, recall y F1-score** por tipo de animal.  
+- Visualización de la **distribución de clases** y **correlación de características**.  
 
-Métricas: precisión, recall y F1-score por tipo de animal.
+</details>
 
-Visualización de la distribución de clases y correlación de características.
+---
 
-🐾 **Predicción Individual**
-
-Ejemplo de cómo predecir el tipo de animal:
-
+## 🐾 Predicción Individual
+```python
 nuevo = [[1,0,0,1,0,0,1,1,1,1,0,0,1,0,1,4]]  # Nueva entrada con las mismas columnas que X
 nuevo_scaled = scaler.transform(nuevo)
 pred = final_model.predict(nuevo_scaled)
 print("Predicción tipo de animal:", pred[0])
 
-💻 **Requisitos**
+
+## 💻 **Requisitos**
 
 Python 3.8+
 
@@ -83,9 +114,9 @@ Pandas
 
 Scikit-learn
 
-Matplotlib / Seaborn (opcional para gráficas)
+Matplotlib / Seaborn (opcional)
 
-✅ **Conclusión**
+## ✅ **Conclusión**
 
 Este proyecto demuestra el flujo completo de Machine Learning:
 
@@ -99,8 +130,7 @@ Evaluación y visualización de resultados
 
 Permite clasificar animales de forma efectiva y entender qué atributos influyen más en la predicción.
 
-👩‍💻 **Autora**
+## 👩‍💻 **Autora**
 
 Nerea Gomez
-
 Estudiante de Ironhack, 2025
