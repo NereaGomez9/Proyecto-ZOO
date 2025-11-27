@@ -1,5 +1,5 @@
 🦓 Proyecto Zoo – Clasificación de Animales con Machine Learning
-📝 ### **Descripción**
+📝 **Descripción**
 
 Este proyecto clasifica animales según sus características físicas y de comportamiento usando Machine Learning.
 Se trabajó con un dataset limpio de animales que incluye atributos como pelo, plumas, alas, patas, dieta, hábitat, entre otros, para predecir su tipo:
@@ -15,7 +15,7 @@ Entrenamiento de modelos
 
 Optimización con Grid Search y Random Search
 
-🎯 Objetivo
+🎯 **Objetivo**
 
 Entrenar un modelo de clasificación capaz de predecir el tipo de animal.
 
@@ -23,7 +23,7 @@ Analizar qué características son más relevantes para la predicción.
 
 Comparar distintos modelos y elegir el más efectivo.
 
-📊 Dataset
+📊 **Dataset**
 
 250 animales con 16 características principales.
 
@@ -37,7 +37,7 @@ Reptiles + Anfibios → Reptiles_Amphibians
 
 Insectos + Invertebrados → Invertebrados
 
-⚙️ Preparación de Datos
+⚙️ **Preparación de Datos**
 
 Escalado de características numéricas con StandardScaler.
 
@@ -47,7 +47,7 @@ Eliminación de valores innecesarios y duplicados.
 
 Análisis de distribución de clases y correlaciones entre features.
 
-🤖 Modelos de Machine Learning
+🤖 **Modelos de Machine Learning**
 Modelo	Accuracy
 Gradient Boosting 🌟	76%
 Regresión Logística	61%
@@ -58,7 +58,7 @@ Optimización de los dos mejores modelos con Grid Search y Random Search.
 
 Gradient Boosting elegido como modelo final.
 
-📈 Evaluación
+📈 **Evaluación**
 
 Matriz de confusión para revisar aciertos y errores por clase.
 
@@ -66,7 +66,7 @@ Métricas: precisión, recall y F1-score por tipo de animal.
 
 Visualización de la distribución de clases y correlación de características.
 
-🐾 Predicción Individual
+🐾 **Predicción Individual**
 
 Ejemplo de cómo predecir el tipo de animal:
 
@@ -75,7 +75,7 @@ nuevo_scaled = scaler.transform(nuevo)
 pred = final_model.predict(nuevo_scaled)
 print("Predicción tipo de animal:", pred[0])
 
-💻 Requisitos
+💻 **Requisitos**
 
 Python 3.8+
 
@@ -85,7 +85,7 @@ Scikit-learn
 
 Matplotlib / Seaborn (opcional para gráficas)
 
-✅ Conclusión
+✅ **Conclusión**
 
 Este proyecto demuestra el flujo completo de Machine Learning:
 
@@ -99,7 +99,7 @@ Evaluación y visualización de resultados
 
 Permite clasificar animales de forma efectiva y entender qué atributos influyen más en la predicción.
 
-👩‍💻 Autoras
+👩‍💻 **Autora**
 
 Nerea Gomez
 
