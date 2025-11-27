@@ -108,17 +108,17 @@ print("Predicción tipo de animal:", pred[0])
 
 ---
 
-💻 Requisitos
+## 💻 Requisitos
 
-Python 3.8+
+- Python 3.8+
 
-Pandas
+- Pandas
 
-Scikit-learn
+- Scikit-learn
 
-Matplotlib / Seaborn (opcional)
+- Matplotlib / Seaborn (opcional)
 
-✅ Conclusión
+## ✅ Conclusión
 
 Este proyecto demuestra el flujo completo de Machine Learning:
 
@@ -134,7 +134,7 @@ Permite clasificar animales de forma efectiva y entender qué atributos influyen
 El Gradient Boosting se confirmó como el modelo más eficiente para este dataset.
 Además, se evidenció que características como patas, tipo de alimentación y hábitat son determinantes para predecir correctamente el tipo de animal.
 
-👩‍💻 Autora
+## 👩‍💻 Autora
 
 Nerea Gomez
 Estudiante de Ironhack, 2025
